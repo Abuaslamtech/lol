@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Viga&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin: auto;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    height: 25vh;
+    border-radius: 0 0 45% 45%;
+    font-family: 'Viga', sans-serif;
+}
+.head h1{
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 15px;
+    margin: auto;
+    font-size: 100px;
+}
+.content{
+    margin: 30px;
+    margin-top: 0;
+    height: 45vh;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    background-image: url(./pngwing.com.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.content:hover{
+    background-color: rgba(238, 255, 6, 0.2);
+}
+.content h4{
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-style:oblique
+}
+#joke{
+    margin: 30px;
+    margin-top: 10px;
+    font-size: 10x;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+#home, #reloadR, #reloadC{
+    background-color: yellow;
+    padding: 15px;
+    margin: auto;
+    margin-top: -15px;
+    border-radius: 30%;
+}
+#reloadR{
+    display: none;
+}
+#reloadC{
+    display: none;
+}
+#home:hover, #reloadR:hover, #reloadC:hover{
+    background-color: black;
+    color: yellow;
+}
+.choose{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: auto;
+    width: 150%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+select{
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 50px;
+}
+option{
+    font-size: 20px;
+}
+
+/* top bar */
+
+.top{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (min-width: 494px) {
+    .container{
+        width: 60%;
+    }
+    .head{
+        height: 25vh;
+        border-radius: 0 0 300px 300px;
+    }
+    .head h1{
+        padding-bottom: 38px;
+        margin: auto;
+    }
+    .content{
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        width: 60%;
+    }
+    
+    /* search page */
+    
+    .top{
+        width: 60%;
+        margin: auto;
+    }
+    select{
+        width: 80%;
+        padding: 20px;;
+        font-size: 20px;
+        height: 100%;
+    }
+}
